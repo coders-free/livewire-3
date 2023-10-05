@@ -9,7 +9,7 @@
                     Nombre
                 </x-label>
                 <x-input class="w-full" 
-                    wire:model="postCreate.title" />
+                    wire:model.live="postCreate.title" />
 
                 <x-input-error for="postCreate.title" />
             </div>
