@@ -6,6 +6,9 @@ use Livewire\Component;
 
 class Paises extends Component
 {
+
+    public $open = false;
+
     public $paises = [
         'Perú',
         'Colombia',
