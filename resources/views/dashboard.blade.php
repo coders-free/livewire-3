@@ -13,11 +13,13 @@
                 'user' => 1
             ]) --}}
 
-            @livewire('formulario')
+            {{-- @livewire('formulario')
 
             <div class="mt-8">
                 @livewire('comments')
-            </div>
+            </div> --}}
+
+            @livewire('father')
 
         </div>
     </div>
