@@ -19,12 +19,38 @@ class Formulario extends Component
 
     public $posts;
 
+    //Ciclo de vida de un componente
     public function mount()
     {
         $this->categories = Category::all();
         $this->tags = Tag::all();
-
         $this->posts = Post::all();
+    }
+
+    public function updating($property, $value){
+        
+        if ($property == 'postCreate.category_id') {
+            
+            if ($value > 3) {
+                throw new \Exception("No puedes seleccionar esta categoria");
+            }
+
+        }
+
+    }
+
+    public function updated($property, $value){
+
+    }
+
+    public function hydrate()
+    {
+
+    }
+
+    public function dehydrate()
+    {
+        
     }
 
     public function save()
