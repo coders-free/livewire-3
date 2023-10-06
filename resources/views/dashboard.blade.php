@@ -15,6 +15,10 @@
 
             @livewire('formulario')
 
+            <div class="mt-8">
+                @livewire('comments')
+            </div>
+
         </div>
     </div>
 </x-app-layout>
