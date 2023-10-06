@@ -11,8 +11,10 @@
 
     <hr class="my-4">
 
-    @livewire('children', [
+    {{-- @livewire('children', [
         'name' => $name
-    ])
+    ]) --}}
+
+    <livewire:children :name="$name" />
 
 </div>
