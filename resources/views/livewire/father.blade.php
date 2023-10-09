@@ -1,20 +1,24 @@
 <div>
     <h1 class="text-2xl font-semibold">
-        Hola mundo desde el componente padre
+        Soy el componente padre
     </h1>
 
-    <x-input type="text" wire:model.live="name" />
+    <x-input wire:model.live="name" />
 
-    <p>
-        {{ $name }}
-    </p>
+    <hr class="my-6">
 
-    <hr class="my-4">
+    <div>
+        @livewire('contador', [], key('contador-1'))
 
-    {{-- @livewire('children', [
-        'name' => $name
-    ]) --}}
+        @livewire('contador' , [], key('contador-2'))
 
-    <livewire:children :name="$name" />
+        @livewire('contador' , [], key('contador-3'))
+
+        @livewire('contador', [], key('contador-4'))
+
+        @livewire('contador', [], key('contador-5'))
+
+        <livewire:contador key="contador-6" />
+    </div>
 
 </div>

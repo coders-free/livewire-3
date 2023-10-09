@@ -1,9 +1,5 @@
 <div>
-    <p>
-        Hola mundo desde el componente hijo
-    </p>
+    <p>Hola desde el componente hijo</p>
 
-    <p>
-        {{ $name }}
-    </p>
+    <x-input wire:model.live="name" />
 </div>
